@@ -49,6 +49,12 @@ app.get('/', (request, response) => {
   })
 })
 
+app.get ('/projects', (req, res) => {
+  res.render('projects.hbs', {
+    pageTitle: 'Project'
+  })
+})
+
 // another route:
 app.get('/about', (req, resp) => {
   resp.render('about.hbs', {
